@@ -129,8 +129,7 @@ Oto krótkie wyjaśnienie najważniejszych parametrów, które zostały ustawion
 
 - max_tokens: Określa maksymalną liczbę tokenów w wygenerowanej odpowiedzi. Tokeny to podstawowe jednostki tekstu, które składają się na słowa i inne znaki. Limity tokenów pomagają kontrolować długość odpowiedzi oraz koszty. W projekcie max_tokens ustawiono na wartość 750, co pozwala na tworzenie odpowiednio długich sekcji HTML, bez ryzyka przekroczenia limitu API.
 
-```markdown
-Dodatkowe materiały
+### Dodatkowe materiały:
 
 - [OpenAI API Documentation](https://beta.openai.com/docs/)
 - [Python-dotenv Documentation](https://pypi.org/project/python-dotenv/)
