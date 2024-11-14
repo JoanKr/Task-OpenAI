@@ -100,19 +100,17 @@ Instrukcje:
 ├── podglad.html
 ├── requirements.txt
 ├── .env
-├── .gitignore
 └── README.md
 ```
 
-- main.py - główny skrypt aplikacji.
-- artykul.txt - plik z treścią artykułu do przetworzenia.
-- artykul.html - wygenerowany kod HTML artykułu.
-- szablon.html - szablon HTML z estetycznymi stylami CSS.
-- podglad.html - pełny podgląd artykułu.
-- requirements.txt - lista wymaganych pakietów Python.
-- .env - plik z kluczem API OpenAI (nie dodawaj do repozytorium).
-- .gitignore - plik określający, które pliki mają być ignorowane przez Git.
-- README.md - ten plik z opisem projektu.
+- `main.py` - główny skrypt aplikacji.
+- `artykul.txt` - plik z treścią artykułu do przetworzenia.
+- `artykul.html` - wygenerowany kod HTML artykułu.
+- `szablon.html` - szablon HTML z estetycznymi stylami CSS.
+- `podglad.html` - pełny podgląd artykułu.
+- `requirements.txt` - lista wymaganych pakietów Python.
+- `.env` - plik z kluczem API OpenAI (nie dodawaj do repozytorium).
+- `README.md` - plik z opisem projektu.
 
 ## Działanie API OpenAI i wyjaśnienie parametrów
 
