@@ -24,7 +24,7 @@ Aplikacja w Pythonie, która:
   - [Szablon HTML](#szablon-html)
   - [Podgląd artykułu](#podgląd-artykułu)
 - [Struktura projektu](#struktura-projektu)
-- [Uwagi](#uwagi)
+- [Działanie API OpenAI i wyjaśnienie parametrów](#Działanie-API-OpenAI-i-wyjaśnienie-parametrów)
 - [Licencja](#licencja)
 
 ## Wymagania
@@ -126,7 +126,8 @@ Oto krótkie wyjaśnienie najważniejszych parametrów, które zostały ustawion
 
   - Niższe wartości (bliskie 0) sprawiają, że odpowiedzi są bardziej precyzyjne i deterministyczne, co jest zalecane, gdy ważna jest spójność i przewidywalność.
   - Wyższe wartości (bliższe 1) zwiększają kreatywność i różnorodność generowanych odpowiedzi. W projekcie ustawiliśmy wartość temperature na 0.5, aby uzyskać równowagę pomiędzy precyzją a naturalnością odpowiedzi.
--max_tokens: Określa maksymalną liczbę tokenów w wygenerowanej odpowiedzi. Tokeny to podstawowe jednostki tekstu, które składają się na słowa i inne znaki. Limity tokenów pomagają kontrolować długość odpowiedzi oraz koszty. W projekcie max_tokens ustawiono na wartość 750, co pozwala na tworzenie odpowiednio długich sekcji HTML, bez ryzyka przekroczenia limitu API.
+
+- max_tokens: Określa maksymalną liczbę tokenów w wygenerowanej odpowiedzi. Tokeny to podstawowe jednostki tekstu, które składają się na słowa i inne znaki. Limity tokenów pomagają kontrolować długość odpowiedzi oraz koszty. W projekcie max_tokens ustawiono na wartość 750, co pozwala na tworzenie odpowiednio długich sekcji HTML, bez ryzyka przekroczenia limitu API.
 
 ```markdown
 ## Dodatkowe materiały
