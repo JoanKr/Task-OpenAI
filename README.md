@@ -40,6 +40,9 @@ Aplikacja w Pythonie, która:
 
    ```bash
    git clone https://github.com/JoanKr/Task-OpenAI.git
+   ```
+
+      ```bash
    cd Task-OpenAI
    ```
 
