@@ -7,7 +7,7 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Wczytaj treść artykułu z pliku
-with open("Zadanie dla JJunior AI Developera - tresc artykulu.txt", "r", encoding="utf-8") as file:
+with open("Artykul.txt", "r", encoding="utf-8") as file:
     article_text = file.read()
 
 # Przygotuj zaktualizowany prompt
