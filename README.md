@@ -25,7 +25,6 @@ Aplikacja w Pythonie, która:
   - [Podgląd artykułu](#podgląd-artykułu)
 - [Struktura projektu](#struktura-projektu)
 - [Działanie API OpenAI i wyjaśnienie parametrów](#Działanie-API-OpenAI-i-wyjaśnienie-parametrów)
-- [Licencja](#licencja)
 
 ## Wymagania
 
