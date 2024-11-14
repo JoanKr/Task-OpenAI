@@ -45,7 +45,7 @@ Aplikacja w Pythonie, która:
 
 2. **Zainstaluj wymagane pakiety:**
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 ## Konfiguracja
 
@@ -61,7 +61,7 @@ Plik powinien nazywać się `artykul.txt` lub dostosuj nazwę w skrypcie `main.p
 
 2. **Uruchom skrypt:**
 ```bash
-   python main.py
+   python3 main.py
 ```
 3. **Po uruchomieniu skryptu:**
 
@@ -112,4 +112,24 @@ Instrukcje:
 - .gitignore - plik określający, które pliki mają być ignorowane przez Git.
 - README.md - ten plik z opisem projektu.
 
+## Działanie API OpenAI i wyjaśnienie parametrów
 
+W projekcie wykorzystywana jest metoda openai.ChatCompletion.create, która jest częścią API OpenAI. Jej zadaniem jest generowanie odpowiedzi na zadany prompt (czyli tekst wprowadzony przez użytkownika) na podstawie wytrenowanego modelu językowego, takiego jak gpt-3.5-turbo.
+
+Oto krótkie wyjaśnienie najważniejszych parametrów, które zostały ustawione w projekcie:
+
+- model: Określa wersję modelu, której chcemy użyć. W tym projekcie korzystamy z gpt-3.5-turbo, który oferuje odpowiedni balans pomiędzy jakością odpowiedzi a efektywnością kosztową.
+
+- messages: Ten parametr przyjmuje listę wiadomości, które symulują dialog. Każda wiadomość jest obiektem zawierającym role (np. „system”, „user”, „assistant”) oraz content (tekst wiadomości). Dialog z ustawieniem roli systemu pomaga zdefiniować zachowanie modelu w kontekście projektu.
+
+- temperature: Parametr kontrolujący stopień kreatywności odpowiedzi:
+
+  - Niższe wartości (bliskie 0) sprawiają, że odpowiedzi są bardziej precyzyjne i deterministyczne, co jest zalecane, gdy ważna jest spójność i przewidywalność.
+  - Wyższe wartości (bliższe 1) zwiększają kreatywność i różnorodność generowanych odpowiedzi. W projekcie ustawiliśmy wartość temperature na 0.5, aby uzyskać równowagę pomiędzy precyzją a naturalnością odpowiedzi.
+-max_tokens: Określa maksymalną liczbę tokenów w wygenerowanej odpowiedzi. Tokeny to podstawowe jednostki tekstu, które składają się na słowa i inne znaki. Limity tokenów pomagają kontrolować długość odpowiedzi oraz koszty. W projekcie max_tokens ustawiono na wartość 750, co pozwala na tworzenie odpowiednio długich sekcji HTML, bez ryzyka przekroczenia limitu API.
+
+```markdown
+## Dodatkowe materiały
+
+- [OpenAI API Documentation](https://beta.openai.com/docs/)
+- [Python-dotenv Documentation](https://pypi.org/project/python-dotenv/)
